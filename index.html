@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fábio Bussmann | Desenvolvedor Angular</title>
+  <!-- Tailwind CSS via CDN (para desenvolvimento rápido) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fontes do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Ícones (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Estilos customizados -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-image: url('./assets/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .text-white {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Overlay escuro sobre a imagem -->
+  <div class="overlay absolute inset-0"></div>
+  
+  <!-- Seção Hero -->
+  <section class="section relative z-10">
+    <main class="text-center px-4 w-full text-white">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fadeIn">
+        Fabio Bussmann
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 animate-fadeIn delay-100">
+        Desenvolvedor FullStack | Angular | Python | Javascript
+      </p>
+      <div class="flex flex-col md:flex-row justify-center gap-4 animate-fadeIn delay-200">
+        <a href="mailto:fabio12513@gmail.com" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg font-medium text-white transition-all">
+          Fale comigo!
+        </a>
+        <a href="https://github.com/BussmannFabio" target="_blank" class="bg-gray-900 hover:bg-gray-800 px-6 py-3 rounded-lg font-medium text-white transition-all flex items-center gap-2">
+          <i class="fab fa-github text-xl"></i> Meus projetos
+        </a>
+      </div>
+    </main>
+  </section>
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre" class="section relative z-10 py-20">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="bg-gray-800 bg-opacity-80 rounded-xl p-8 md:p-12 backdrop-blur-sm text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-purple-400">
+          <i class="fas fa-user mr-3"></i>Sobre Mim
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <p class="mb-6 text-lg leading-relaxed">
+              Sou um desenvolvedor apaixonado por tecnologia, formado em <span class="text-purple-300">Análise e Desenvolvimento de Sistemas</span> pela FATEC, com experiência em desenvolvimento web fullstack.
+            </p>
+            <p class="mb-6 text-lg leading-relaxed">
+              Atualmente trabalho com <span class="text-purple-300">Angular (PO-UI), TypeScript e APIs RESTful</span>, além de desenvolver projetos pessoais com Node.js, Django e bancos de dados SQL.
+            </p>
+            <p class="mb-8 text-lg leading-relaxed">
+              Minha trajetória inclui passagens por áreas administrativas e logística, o que me deu uma visão ampla de negócios e habilidade para me comunicar com times multidisciplinares.
+            </p>
+            
+            <div class="flex flex-wrap gap-4">
+                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                  <i class="fab fa-angular mr-2 text-purple-300"></i> Angular
+                </span>
+                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                  <i class="fab fa-python mr-2 text-purple-300"></i> Python
+                </span>
+                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                  <i class="fab fa-js mr-2 text-purple-300"></i> JavaScript
+                </span>
+                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                  <i class="fab fa-react mr-2 text-purple-300"></i> React
+                </span>
+                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                  <i class="fab fa-git-alt mr-2 text-purple-300"></i> Git
+                </span>
+              </div>
+          </div>
+          
+          <div class="mt-8 md:mt-0">
+            <div class="bg-gray-700 p-6 rounded-lg">
+              <h3 class="text-xl font-semibold mb-4 text-purple-300">
+                <i class="fas fa-graduation-cap mr-2"></i>Formação
+              </h3>
+              <ul class="space-y-4">
+                <li>
+                  <h4 class="font-medium">Tecnólogo em ADS</h4>
+                  <p class="text-gray-300">FATEC Guaratinguetá · 2023-2027</p>
+                </li>
+                <li>
+                  <h4 class="font-medium">Certificações</h4>
+                  <p class="text-gray-300">IBM, Cisco, Alura</p>
+                </li>
+              </ul>
+              
+              <h3 class="text-xl font-semibold mt-8 mb-4 text-purple-300">
+                <i class="fas fa-briefcase mr-2"></i>Experiência
+              </h3>
+              <ul class="space-y-4">
+                <li>
+                    <h4 class="font-medium">Auxiliar Administrativo</h4>
+                    <p class="text-gray-300">Kellynha Ltda · 2021-2023</p>
+                  </li>
+                <li>
+                  <h4 class="font-medium">Desenvolvedor Estagiario</h4>
+                  <p class="text-gray-300">Lorenfer Ltda · 2024-atual</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animação personalizada via Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: 'fadeIn 1.5s ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>
