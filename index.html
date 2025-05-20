@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fábio Bussmann | Desenvolvedor Angular</title>
-  <!-- Tailwind CSS via CDN (para desenvolvimento rápido) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <title>Fábio Bussmann | DevPage</title>
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Fontes do Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Ícones (Font Awesome) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Fonte Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
   <!-- Estilos customizados -->
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-image: url('./assets/background.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-    .section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-    .text-white {
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <!-- Overlay escuro sobre a imagem -->
+  <!-- Overlay escura -->
   <div class="overlay absolute inset-0"></div>
-  
+
   <!-- Seção Hero -->
   <section class="section relative z-10">
     <main class="text-center px-4 w-full text-white">
@@ -49,9 +35,10 @@
         <a href="mailto:fabio12513@gmail.com" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg font-medium text-white transition-all">
           Fale comigo!
         </a>
-        <a href="https://github.com/BussmannFabio" target="_blank" class="bg-gray-900 hover:bg-gray-800 px-6 py-3 rounded-lg font-medium text-white transition-all flex items-center gap-2">
-          <i class="fab fa-github text-xl"></i> Meus projetos
-        </a>
+        <a href="https://github.com/BussmannFabio" target="_blank"
+        class="hover:bg-gray-800 px-6 py-3 rounded-lg font-medium text-white transition-all flex items-center justify-center gap-2">
+       <i class="fab fa-github text-xl"></i> Meus projetos
+     </a>
       </div>
     </main>
   </section>
@@ -63,7 +50,7 @@
         <h2 class="text-3xl md:text-4xl font-bold mb-6 text-purple-400">
           <i class="fas fa-user mr-3"></i>Sobre Mim
         </h2>
-        
+
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <p class="mb-6 text-lg leading-relaxed">
@@ -75,26 +62,26 @@
             <p class="mb-8 text-lg leading-relaxed">
               Minha trajetória inclui passagens por áreas administrativas e logística, o que me deu uma visão ampla de negócios e habilidade para me comunicar com times multidisciplinares.
             </p>
-            
+
             <div class="flex flex-wrap gap-4">
-                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                  <i class="fab fa-angular mr-2 text-purple-300"></i> Angular
-                </span>
-                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                  <i class="fab fa-python mr-2 text-purple-300"></i> Python
-                </span>
-                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                  <i class="fab fa-js mr-2 text-purple-300"></i> JavaScript
-                </span>
-                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                  <i class="fab fa-react mr-2 text-purple-300"></i> React
-                </span>
-                <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                  <i class="fab fa-git-alt mr-2 text-purple-300"></i> Git
-                </span>
-              </div>
+              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                <i class="fab fa-angular mr-2 text-purple-300"></i> Angular
+              </span>
+              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                <i class="fab fa-python mr-2 text-purple-300"></i> Python
+              </span>
+              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                <i class="fab fa-js mr-2 text-purple-300"></i> JavaScript
+              </span>
+              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                <i class="fab fa-react mr-2 text-purple-300"></i> React
+              </span>
+              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
+                <i class="fab fa-git-alt mr-2 text-purple-300"></i> Git
+              </span>
+            </div>
           </div>
-          
+
           <div class="mt-8 md:mt-0">
             <div class="bg-gray-700 p-6 rounded-lg">
               <h3 class="text-xl font-semibold mb-4 text-purple-300">
@@ -110,17 +97,17 @@
                   <p class="text-gray-300">IBM, Cisco, Alura</p>
                 </li>
               </ul>
-              
+
               <h3 class="text-xl font-semibold mt-8 mb-4 text-purple-300">
                 <i class="fas fa-briefcase mr-2"></i>Experiência
               </h3>
               <ul class="space-y-4">
                 <li>
-                    <h4 class="font-medium">Auxiliar Administrativo</h4>
-                    <p class="text-gray-300">Kellynha Ltda · 2021-2023</p>
-                  </li>
+                  <h4 class="font-medium">Auxiliar Administrativo</h4>
+                  <p class="text-gray-300">Kellynha Ltda · 2021-2023</p>
+                </li>
                 <li>
-                  <h4 class="font-medium">Desenvolvedor Estagiario</h4>
+                  <h4 class="font-medium">Desenvolvedor Estagiário</h4>
                   <p class="text-gray-300">Lorenfer Ltda · 2024-atual</p>
                 </li>
               </ul>
@@ -131,7 +118,56 @@
     </div>
   </section>
 
-  <!-- Animação personalizada via Tailwind -->
+  <!-- Seção Projetos -->
+  <section id="projetos" class="section relative z-10 py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-purple-400 text-center">
+        <i class="fas fa-laptop-code mr-3"></i>Projetos Dev em Destaque
+      </h2>
+  
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+        <!-- Projeto 1 -->
+        <a href="https://github.com/BussmannFabio/chatbot-furia" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block">
+          <img src="assets/projeto1.png" alt="Projeto 1"
+               class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center">
+            <span class="text-white text-xl font-semibold text-center">ChatBot Fúria protótipo JavaScript + HTML + CSS</span>
+          </div>
+        </a>
+  
+        <!-- Projeto 2 -->
+        <a href="https://github.com/BussmannFabio/todo-angular-po-ui" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block">
+          <img src="assets/projeto2.png" alt="Projeto 2"
+               class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center">
+            <span class="text-white text-xl font-semibold text-center">To do list em Angular (PO-UI)<br>BackEnd em Node.js e MySQL</span>
+          </div>
+        </a>
+  
+        <!-- Projeto 3 -->
+        <a href="https://github.com/BussmannFabio/landpage-bootstrap" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block">
+          <img src="assets/projeto3.png" alt="Projeto 3"
+               class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center">
+            <span class="text-white text-xl font-semibold text-center">LandPage Responsiva (HTML + Bootstrap)</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 border-t border-gray-700 py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm">
+      <div class="text-center md:text-left">
+        <span class="text-white font-semibold">Dev Fabio</span><span class="text-purple-400 font-light">Bussmann</span>
+      </div>
+      <div class="text-center md:text-right mt-2 md:mt-0">
+        © 2025 DevFabioBussmann.
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Tailwind Custom Animation -->
   <script>
     tailwind.config = {
       theme: {
@@ -149,5 +185,6 @@
       }
     }
   </script>
+
 </body>
 </html>

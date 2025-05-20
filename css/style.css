@@ -1,0 +1,19 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .text-white {
+    color: white;
+  }
+ 
