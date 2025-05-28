@@ -6,7 +6,7 @@ body {
     background-attachment: fixed;
   }
   .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.35);
   }
   .section {
     min-height: 100vh;
