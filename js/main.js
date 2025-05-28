@@ -5,7 +5,7 @@ tsParticles.load("tsparticles", {
     fpsLimit: 100,
     particles: {
         number: {
-            value: 60,
+            value: 80,
             density: {
                 enable: true,
                 area: 800
