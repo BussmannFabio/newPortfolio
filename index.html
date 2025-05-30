@@ -1,276 +1,412 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Fábio Bussmann - Desenvolvedor Fullstack com Angular, Python e Design Digital."
+    />
+    <meta
+      name="keywords"
+      content="Desenvolvedor, Angular, Python, Portfólio, Web, Fábio Bussmann, Frontend, Backend"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Portfólio de Fábio Bussmann - Desenvolvedor Fullstack com Angular, Python e Design Digital." />
-  <meta name="keywords" content="Desenvolvedor, Angular, Python, Portfólio, Web, Fábio Bussmann, Frontend, Backend" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>Fábio Bussmann | DevPage</title>
 
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  <title>Fábio Bussmann | DevPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <div id="tsparticles" class="fixed inset-0 -z-10"></div>
 
-<body>
-  <div id="tsparticles" class="fixed inset-0 -z-10"></div>
+    <!-- Overlay escura -->
+    <div class="overlay absolute inset-0"></div>
 
-  <!-- Overlay escura -->
-  <div class="overlay absolute inset-0"></div>
+    <!-- Seção Hero -->
+    <section class="section relative z-10">
+      <main class="text-center px-4 w-full text-white">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fadeIn">
+          Fabio Bussmann
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 animate-fadeIn delay-100">
+          Desenvolvedor E WebDesigner | Angular | Python | Javascript
+        </p>
+        <div
+          class="flex flex-col md:flex-row justify-center gap-4 animate-fadeIn delay-200"
+        >
+          <a
+            href="mailto:fabio12513@gmail.com"
+            class="bg-green-600 hover:bg-green-800 px-6 py-3 rounded-lg font-medium text-white transition-all"
+          >
+            Fale comigo!
+          </a>
+          <a
+            href="https://github.com/BussmannFabio"
+            target="_blank"
+            class="hover:bg-gray-800 px-6 py-3 rounded-lg font-medium text-white transition-all flex items-center justify-center gap-2"
+          >
+            <i class="fab fa-github text-xl"></i> Meus projetos
+          </a>
+        </div>
+      </main>
+    </section>
 
-  <!-- Seção Hero -->
-  <section class="section relative z-10 ">
-    <main class="text-center px-4 w-full text-white">
-      <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fadeIn">
-        Fabio Bussmann
-      </h1>
-      <p class="text-xl md:text-2xl mb-8 animate-fadeIn delay-100">
-        Desenvolvedor E WebDesigner | Angular | Python | Javascript
-      </p>
-      <div class="flex flex-col md:flex-row justify-center gap-4 animate-fadeIn delay-200">
-        <a href="mailto:fabio12513@gmail.com"
-          class="bg-green-600 hover:bg-green-800 px-6 py-3 rounded-lg font-medium text-white transition-all">
-          Fale comigo!
-        </a>
-        <a href="https://github.com/BussmannFabio" target="_blank"
-          class="hover:bg-gray-800 px-6 py-3 rounded-lg font-medium text-white transition-all flex items-center justify-center gap-2">
-          <i class="fab fa-github text-xl"></i> Meus projetos
-        </a>
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="section relative z-10 py-20">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div
+          class="bg-gray-800 bg-opacity-80 rounded-xl p-8 md:p-12 backdrop-blur-sm text-white"
+        >
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">
+            <i class="fas fa-user mr-3"></i>Sobre Mim
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <p class="mb-6 text-lg leading-relaxed">
+                Sou um desenvolvedor apaixonado por tecnologia, formando em
+                <span class="text-green-300"
+                  >Análise e Desenvolvimento de Sistemas</span
+                >
+                pela FATEC, com experiência em desenvolvimento web fullstack.
+              </p>
+              <p class="mb-6 text-lg leading-relaxed">
+                Atualmente trabalho com
+                <span class="text-green-300"
+                  >Angular (PO-UI), TypeScript e APIs RESTful</span
+                >, além de desenvolver projetos pessoais com Node.js, Django e
+                bancos de dados SQL.
+              </p>
+              <p class="mb-8 text-lg leading-relaxed">
+                Minha trajetória inclui passagens por áreas administrativas e
+                logística, o que me deu uma visão ampla de negócios e habilidade
+                para me comunicar com times multidisciplinares. Também possuo
+                experiência com design e edição de mídia digitais.
+              </p>
+
+              <div class="flex flex-wrap gap-4">
+                <span
+                  class="bg-gray-700 px-4 py-2 rounded-full flex items-center"
+                >
+                  <i class="fab fa-angular mr-2 text-green-300"></i> Angular
+                </span>
+                <span
+                  class="bg-gray-700 px-4 py-2 rounded-full flex items-center"
+                >
+                  <i class="fab fa-python mr-2 text-green-300"></i> Python
+                </span>
+                <span
+                  class="bg-gray-700 px-4 py-2 rounded-full flex items-center"
+                >
+                  <i class="fab fa-js mr-2 text-green-300"></i> JavaScript
+                </span>
+                <span
+                  class="bg-gray-700 px-4 py-2 rounded-full flex items-center"
+                >
+                  <i class="fab fa-react mr-2 text-green-300"></i> React
+                </span>
+                <span
+                  class="bg-gray-700 px-4 py-2 rounded-full flex items-center"
+                >
+                  <i class="fab fa-git-alt mr-2 text-green-300"></i> Git
+                </span>
+                <span
+                  class="bg-gray-700 px-4 py-2 rounded-full flex items-center"
+                >
+                  <i class="fab fa-css3-alt mr-2 text-green-300"></i> CSS
+                </span>
+                <span
+                  class="bg-gray-700 px-4 py-2 rounded-full flex items-center"
+                >
+                  <i class="fab fa-html5 mr-2 text-green-300"></i> HTML
+                </span>
+              </div>
+            </div>
+
+            <div class="mt-8 md:mt-0">
+              <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4 text-green-300">
+                  <i class="fas fa-graduation-cap mr-2"></i>Formação
+                </h3>
+                <ul class="space-y-4">
+                  <li>
+                    <h4 class="font-medium">Tecnólogo em ADS</h4>
+                    <p class="text-gray-300">FATEC Guaratinguetá · 2023-2027</p>
+                  </li>
+                  <li>
+                    <h4 class="font-medium">Certificações</h4>
+                    <p class="text-gray-300">IBM, Cisco, Alura</p>
+                  </li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-8 mb-4 text-green-300">
+                  <i class="fas fa-briefcase mr-2"></i>Experiência
+                </h3>
+                <ul class="space-y-4">
+                  <li>
+                    <h4 class="font-medium">Auxiliar Administrativo</h4>
+                    <p class="text-gray-300">Kellynha Ltda · 2021-2023</p>
+                  </li>
+                  <li>
+                    <h4 class="font-medium">Desenvolvedor Estagiário</h4>
+                    <p class="text-gray-300">Lorenfer Ltda · 2024-atual</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-  </section>
+    </section>
 
-  <!-- Seção Sobre Mim -->
-  <section id="sobre" class="section relative z-10 py-20">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <div class="bg-gray-800 bg-opacity-80 rounded-xl p-8 md:p-12 backdrop-blur-sm text-white">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">
-          <i class="fas fa-user mr-3"></i>Sobre Mim
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section relative z-10 py-20 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-12 text-green-400 text-center"
+        >
+          <i class="fas fa-laptop-code mr-3"></i>Projetos Dev em Destaque
         </h2>
 
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <p class="mb-6 text-lg leading-relaxed">
-              Sou um desenvolvedor apaixonado por tecnologia, formando em <span class="text-green-300">Análise e
-                Desenvolvimento de Sistemas</span> pela FATEC, com experiência em desenvolvimento web fullstack.
-            </p>
-            <p class="mb-6 text-lg leading-relaxed">
-              Atualmente trabalho com <span class="text-green-300">Angular (PO-UI), TypeScript e APIs RESTful</span>,
-              além de desenvolver projetos pessoais com Node.js, Django e bancos de dados SQL.
-            </p>
-            <p class="mb-8 text-lg leading-relaxed">
-              Minha trajetória inclui passagens por áreas administrativas e logística, o que me deu uma visão ampla de
-              negócios e habilidade para me comunicar com times multidisciplinares. Também possuo experiência com design
-              e edição de mídia digitais.
-            </p>
-
-            <div class="flex flex-wrap gap-4">
-              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                <i class="fab fa-angular mr-2 text-green-300"></i> Angular
-              </span>
-              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                <i class="fab fa-python mr-2 text-green-300"></i> Python
-              </span>
-              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                <i class="fab fa-js mr-2 text-green-300"></i> JavaScript
-              </span>
-              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                <i class="fab fa-react mr-2 text-green-300"></i> React
-              </span>
-              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                <i class="fab fa-git-alt mr-2 text-green-300"></i> Git
-              </span>
-              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                <i class="fab fa-css3-alt mr-2 text-green-300"></i> CSS
-              </span>
-              <span class="bg-gray-700 px-4 py-2 rounded-full flex items-center">
-                <i class="fab fa-html5 mr-2 text-green-300"></i> HTML
-              </span>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+          <!-- Projeto 1 -->
+          <a
+            href="https://github.com/BussmannFabio/ChatBot-Furia"
+            target="_blank"
+            class="relative group overflow-hidden rounded-lg shadow-lg block"
+          >
+            <img
+              src="assets/projeto1.png"
+              alt="Projeto 1"
+              loading="lazy"
+              class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center"
+            >
+              <span class="text-white text-xl font-semibold text-center"
+                >ChatBot Fúria protótipo JavaScript + HTML + CSS</span
+              >
             </div>
-          </div>
-
-          <div class="mt-8 md:mt-0">
-            <div class="bg-gray-700 p-6 rounded-lg">
-              <h3 class="text-xl font-semibold mb-4 text-green-300">
-                <i class="fas fa-graduation-cap mr-2"></i>Formação
-              </h3>
-              <ul class="space-y-4">
-                <li>
-                  <h4 class="font-medium">Tecnólogo em ADS</h4>
-                  <p class="text-gray-300">FATEC Guaratinguetá · 2023-2027</p>
-                </li>
-                <li>
-                  <h4 class="font-medium">Certificações</h4>
-                  <p class="text-gray-300">IBM, Cisco, Alura</p>
-                </li>
-              </ul>
-
-              <h3 class="text-xl font-semibold mt-8 mb-4 text-green-300">
-                <i class="fas fa-briefcase mr-2"></i>Experiência
-              </h3>
-              <ul class="space-y-4">
-                <li>
-                  <h4 class="font-medium">Auxiliar Administrativo</h4>
-                  <p class="text-gray-300">Kellynha Ltda · 2021-2023</p>
-                </li>
-                <li>
-                  <h4 class="font-medium">Desenvolvedor Estagiário</h4>
-                  <p class="text-gray-300">Lorenfer Ltda · 2024-atual</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Projetos -->
-  <section id="projetos" class="section relative z-10 py-20 bg-gray-900">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-green-400 text-center">
-        <i class="fas fa-laptop-code mr-3"></i>Projetos Dev em Destaque
-      </h2>
-
-      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
-        <!-- Projeto 1 -->
-        <a href="https://github.com/BussmannFabio/ChatBot-Furia" target="_blank"
-          class="relative group overflow-hidden rounded-lg shadow-lg block">
-          <img src="assets/projeto1.png" alt="Projeto 1" loading="lazy"
-            class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center">
-            <span class="text-white text-xl font-semibold text-center">ChatBot Fúria protótipo JavaScript + HTML +
-              CSS</span>
-          </div>
-        </a>
-
-        <!-- Projeto 2 -->
-        <a href="https://github.com/BussmannFabio/ToDolist-BackEndSQLite" target="_blank"
-          class="relative group overflow-hidden rounded-lg shadow-lg block">
-          <img src="assets/projeto2.png" alt="Projeto 2" loading="lazy"
-            class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center">
-            <span class="text-white text-xl font-semibold text-center">To do list em Angular (PO-UI)<br>BackEnd em
-              Node.js e MySQL</span>
-          </div>
-        </a>
-
-        <!-- Projeto 3 -->
-        <a href="https://github.com/BussmannFabio/landPageRBianco" target="_blank"
-          class="relative group overflow-hidden rounded-lg shadow-lg block">
-          <img src="assets/projeto3.png" alt="Projeto 3" loading="lazy"
-            class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center">
-            <span class="text-white text-xl font-semibold text-center">LandPage Responsiva (HTML + Bootstrap)</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Projetos de Design -->
-  <section id="design" class="section relative z-10 py-8">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-green-300 text-center">
-        <i class="fas fa-palette mr-3"></i>Projetos de Design
-      </h2>
-
-      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
-        <!-- Projeto Design 1 -->
-        <div class="group relative block rounded-lg overflow-hidden shadow-md">
-          <img src="assets/design1.png" alt="Design 1" loading="lazy"
-            class="w-full h-52 object-contain bg-white p-2 transition-transform duration-300 group-hover:scale-105" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-2 text-center">
-            <span class="text-white font-semibold text-lg">Logo para marca local</span>
-          </div>
-        </div>
-
-        <!-- Projeto Design 2 -->
-        <div class="group relative block rounded-lg overflow-hidden shadow-md">
-          <img src="assets/design2.png" alt="Design 2" loading="lazy"
-            class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-2 text-center">
-            <span class="text-white font-semibold text-lg">Capa para fundo de site</span>
-          </div>
-        </div>
-
-        <!-- Projeto Design 3 -->
-        <div class="group relative block rounded-lg overflow-hidden shadow-md">
-          <img src="assets/design3.png" alt="Design 3" loading="lazy"
-            class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105" />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-2 text-center">
-            <span class="text-white font-semibold text-lg">Capa para um canal de YouTube</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-gray-900 text-gray-400 border-t border-gray-700 py-6">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start text-sm">
-
-      <!-- Nome -->
-      <div class="mb-4 md:mb-0">
-        <div class="text-white font-semibold">Dev Fabio <span class="text-green-400 font-light">Bussmann</span></div>
-        <div class="mt-1">© 2025 desenvolvido por @FabioBussmann</div>
-      </div>
-
-      <!-- Redes sociais (em coluna) -->
-      <div class="flex flex-col gap-3">
-        <div class="flex items-center gap-2 hover:text-white transition-colors">
-          <a href="https://www.linkedin.com/in/devfabiobussmann" target="_blank"
-            class="flex items-center gap-2 hover:text-white transition-colors">
-            <i class="fab fa-linkedin text-lg"></i> LinkedIn
           </a>
-        </div>
 
-        <div class="flex items-center gap-2 hover:text-white transition-colors">
-          <a href="https://www.instagram.com/fabio_bussmann/" target="_blank"
-            class="flex items-center gap-2 hover:text-white transition-colors">
-            <i class="fab fa-instagram text-lg"></i> Instagram
+          <!-- Projeto 2 -->
+          <a
+            href="https://github.com/BussmannFabio/ToDolist-BackEndSQLite"
+            target="_blank"
+            class="relative group overflow-hidden rounded-lg shadow-lg block"
+          >
+            <img
+              src="assets/projeto2.png"
+              alt="Projeto 2"
+              loading="lazy"
+              class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center"
+            >
+              <span class="text-white text-xl font-semibold text-center"
+                >To do list em Angular (PO-UI)<br />BackEnd em Node.js e
+                MySQL</span
+              >
+            </div>
+          </a>
+
+          <!-- Projeto 3 -->
+          <a
+            href="https://github.com/BussmannFabio/landPageRBianco"
+            target="_blank"
+            class="relative group overflow-hidden rounded-lg shadow-lg block"
+          >
+            <img
+              src="assets/projeto3.png"
+              alt="Projeto 3"
+              loading="lazy"
+              class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-4 text-center"
+            >
+              <span class="text-white text-xl font-semibold text-center"
+                >LandPage Responsiva (HTML + Bootstrap)</span
+              >
+            </div>
           </a>
         </div>
       </div>
+    </section>
 
-    </div>
-  </footer>
-    <button id="backToTop" class="hidden fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full shadow-lg transition-opacity z-50">
-  <i class="fas fa-arrow-up"></i>
-</button>
+    <!-- Seção Projetos de Design -->
+    <section id="design" class="section relative z-10 py-8">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-10 text-green-300 text-center"
+        >
+          <i class="fas fa-palette mr-3"></i>Projetos de Design
+        </h2>
 
-  <!-- Tailwind Animation -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          animation: {
-            fadeIn: 'fadeIn 1.5s ease-in-out',
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+          <!-- Projeto Design 1 -->
+          <div
+            class="group relative block rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="assets/design1.png"
+              alt="Design 1"
+              loading="lazy"
+              class="w-full h-52 object-contain bg-white p-2 transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-2 text-center"
+            >
+              <span class="text-white font-semibold text-lg"
+                >Logo para marca local</span
+              >
+            </div>
+          </div>
+
+          <!-- Projeto Design 2 -->
+          <div
+            class="group relative block rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="assets/design2.png"
+              alt="Design 2"
+              loading="lazy"
+              class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-2 text-center"
+            >
+              <span class="text-white font-semibold text-lg"
+                >Capa para fundo de site</span
+              >
+            </div>
+          </div>
+
+          <!-- Projeto Design 3 -->
+          <div
+            class="group relative block rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="assets/design3.png"
+              alt="Design 3"
+              loading="lazy"
+              class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center px-2 text-center"
+            >
+              <span class="text-white font-semibold text-lg"
+                >Capa para um canal de YouTube</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-8 mt-12">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row gap-8">
+        <div
+          class="flex-1 bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col justify-center"
+        >
+          <div class="mb-4 font-semibold text-white">Redes Sociais</div>
+          <div class="flex flex-col gap-4">
+            <a
+              href="https://www.linkedin.com/in/devfabiobussmann"
+              target="_blank"
+              class="flex items-center gap-3 text-gray-200 hover:text-green-400 transition-colors"
+            >
+              <span
+                class="border border-gray-500 rounded-full w-10 h-10 flex items-center justify-center bg-gray-800"
+              >
+                <i class="fab fa-linkedin text-xl"></i>
+              </span>
+              DevFabioBussmann
+            </a>
+            <a
+              href="https://www.instagram.com/fabio_bussmann/"
+              target="_blank"
+              class="flex items-center gap-3 text-gray-200 hover:text-green-400 transition-colors"
+            >
+              <span
+                class="border border-gray-500 rounded-full w-10 h-10 flex items-center justify-center bg-gray-800"
+              >
+                <i class="fab fa-instagram text-xl"></i>
+              </span>
+              Fabio_Bussmann
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="flex-1 bg-gray-800 text-white rounded-lg shadow-lg p-6 relative"
+        >
+          <div
+            class="absolute left-0 top-0 h-full"
+            style="width: 4px; background-color: #22c55e"
+          ></div>
+          <div class="mb-2 font-semibold text-lg">
+            Dev Fabio <span class="text-green-400 font-light">Bussmann</span>
+          </div>
+          <div class="mb-2 flex items-center gap-2 text-gray-300">
+            <i class="fas fa-envelope text-green-400"></i>
+            <a href="mailto:fabio12513@gmail.com" class="hover:underline"
+              >fabio12513@gmail.com</a
+            >
+          </div>
+          <div class="mb-2 items-center gap-2 text-gray-300">
+            <i class="fas fa-phone text-green-400"></i>
+            <span>(12) 99146-4465</span>
+          </div>
+          <div class="mb-2 items-center gap-2 text-gray-300">
+            <i class="fas fa-map-marker-alt text-green-400"></i>
+            <span>Guaratinguetá/Campinas, SP</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="backToTop"
+      class="hidden fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full shadow-lg transition-opacity z-50"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Tailwind Animation -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              fadeIn: "fadeIn 1.5s ease-in-out",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
           },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            }
-          }
-        }
-      }
-    }
-  </script>
-  
-<script src="js/main.js" defer></script>
-</body>
+        },
+      };
+    </script>
 
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
