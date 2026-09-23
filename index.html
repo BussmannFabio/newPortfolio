@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfólio de Fabio Bussmann, desenvolvedor fullstack. Sistemas empresariais, e-commerce e experiências digitais." />
-    <meta name="theme-color" content="#101c1c" />
+    <meta name="description" content="Portfólio de Fabio Bussmann, desenvolvedor fullstack com experiência em sistemas empresariais, e-commerce e operações digitais." />
+    <meta name="theme-color" content="#0b1715" />
     <title>Fabio Bussmann | Desenvolvedor Fullstack</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,11 +17,11 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#inicio" aria-label="Fabio Bussmann, voltar ao início">FB<span>.</span></a>
+        <a class="brand" href="#inicio" aria-label="Fabio Bussmann, início">Fabio<span>.</span></a>
         <nav class="site-nav" aria-label="Navegação principal">
-          <a href="#sobre">Sobre</a>
+          <a href="#perfil">Perfil</a>
           <a href="#projetos">Projetos</a>
-          <a href="#design">Design</a>
+          <a href="#trajetoria">Trajetória</a>
           <a href="#contato">Contato</a>
         </nav>
       </div>
@@ -31,103 +31,129 @@
       <section class="hero" id="inicio" aria-labelledby="hero-title">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow"><span class="eyebrow-line"></span> Portfólio · Desenvolvimento fullstack</span>
-            <h1 id="hero-title">Tecnologia para <em>resolver problemas reais.</em></h1>
-            <p class="hero-intro">Sou Fabio Bussmann. Desenvolvo soluções web que conectam processos, pessoas e negócios — de sistemas internos a experiências de compra online.</p>
+            <span class="eyebrow"><span aria-hidden="true"></span> Desenvolvedor web fullstack</span>
+            <h1 id="hero-title">Fabio<br /><strong>Bussmann</strong></h1>
+            <p class="hero-intro">Transformo necessidades de negócio em produtos digitais objetivos, conectando interfaces, APIs, dados e operações.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#projetos">Conheça meu trabalho <span aria-hidden="true">↗</span></a>
-              <a class="button button-outline" href="#contato">Entre em contato</a>
+              <a class="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">↘</span></a>
+              <a class="button button-ghost" href="https://www.linkedin.com/in/devfabiobussmann" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
             </div>
           </div>
-          <div class="hero-panel" aria-label="Áreas de atuação">
-            <div class="panel-top"><span class="panel-mark">/ 01 — 02</span><span class="panel-dot" aria-hidden="true"></span></div>
-            <p class="panel-title">Do backoffice ao checkout.</p>
-            <div class="panel-row"><span>01</span><strong>Sistemas empresariais</strong><span aria-hidden="true">↗</span></div>
-            <div class="panel-row"><span>02</span><strong>E-commerce &amp; delivery</strong><span aria-hidden="true">↗</span></div>
-            <p class="panel-foot">Projetos em destaque: Kellynha App e Real Mercado.</p>
+
+          <figure class="portrait-card">
+            <div class="portrait-frame">
+              <img src="assets/fabio-bussmann.png" alt="Retrato de Fabio Bussmann" width="400" height="400" />
+            </div>
+            <figcaption>
+              <span class="status-dot" aria-hidden="true"></span>
+              <span><strong>Desenvolvimento &amp; produto</strong><small>Guaratinguetá / Campinas, SP</small></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="container hero-strip" aria-label="Áreas principais">
+          <span>01 · Sistemas empresariais</span>
+          <span>02 · E-commerce</span>
+          <span>03 · APIs e integrações</span>
+          <span>04 · Operações digitais</span>
+        </div>
+      </section>
+
+      <section class="section section-light" id="perfil" aria-labelledby="perfil-title">
+        <div class="container profile-grid">
+          <div class="section-intro">
+            <span class="section-kicker">Perfil profissional</span>
+            <h2 id="perfil-title">Tecnologia com contexto de <em>negócio.</em></h2>
+          </div>
+          <div class="profile-copy">
+            <p class="profile-lead">Desenvolvo aplicações web pensando tanto na experiência de quem usa quanto na rotina de quem opera.</p>
+            <p>Minha vivência em áreas administrativas e logística contribui para compreender processos, identificar gargalos e traduzir necessidades reais em soluções digitais claras.</p>
+            <div class="competencies" aria-label="Competências principais">
+              <span>Angular</span><span>TypeScript</span><span>Python</span><span>Node.js</span><span>APIs REST</span><span>SQL</span><span>UI &amp; UX</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-light" id="sobre" aria-labelledby="sobre-title">
-        <div class="container about-grid">
-          <div>
-            <span class="section-kicker">01 / Sobre mim</span>
-            <h2 id="sobre-title">Código com visão de <span>negócio.</span></h2>
-          </div>
-          <div class="about-content">
-            <p>Sou desenvolvedor web fullstack e estudante de Análise e Desenvolvimento de Sistemas na FATEC Guaratinguetá. Trabalho com Angular (PO-UI), TypeScript e APIs RESTful, além de explorar Node.js, Django e bancos de dados SQL.</p>
-            <p>Minha experiência em áreas administrativas e logística ajuda a transformar necessidades operacionais em soluções digitais claras. Também tenho repertório em design e mídia digital.</p>
-            <div class="skills" aria-label="Tecnologias e áreas de atuação">
-              <span>Angular</span><span>TypeScript</span><span>Python</span><span>Node.js</span><span>APIs REST</span><span>SQL</span><span>Design digital</span>
-            </div>
-            <div class="about-meta">
-              <div><small>Formação</small><strong>Tecnólogo em ADS</strong><span>FATEC Guaratinguetá · 2023–2027</span></div>
-              <div><small>Experiência</small><strong>Desenvolvimento web</strong><span>Lorenfer Ltda · desde 2024</span></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-dark" id="projetos" aria-labelledby="projetos-title">
+      <section class="section projects-section" id="projetos" aria-labelledby="projetos-title">
         <div class="container">
           <div class="section-heading">
-            <div><span class="section-kicker">02 / Projetos selecionados</span><h2 id="projetos-title">Duas frentes, um propósito: <span>fazer funcionar.</span></h2></div>
-            <p>Soluções para a operação interna de uma empresa e para a jornada digital de clientes de supermercado.</p>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-top"><span class="project-number">01 / Gestão interna</span><span class="project-icon" aria-hidden="true">⌘</span></div>
-              <div class="project-body">
-                <h3>Kellynha App</h3>
-                <p>Minha experiência com sistemas empresariais: soluções voltadas a processos operacionais e gestão interna.</p>
-              </div>
-              <div class="project-bottom"><span>Sistemas empresariais</span><span>Gestão interna</span><span>Processos</span></div>
-            </article>
-
-            <article class="project-card project-card-accent">
-              <div class="project-top"><span class="project-number">02 / E-commerce em produção</span><span class="project-icon" aria-hidden="true">↗</span></div>
-              <div class="project-body">
-                <h3>Real Mercado</h3>
-                <p>Plataforma de supermercado que reúne catálogo, compras, pagamentos, pedidos e logística de entrega em um canal digital.</p>
-              </div>
-              <div class="project-bottom"><span>E-commerce</span><span>Pagamentos</span><span>Delivery</span></div>
-              <a class="project-link" href="https://realmercado.com.br/" target="_blank" rel="noopener noreferrer">Visitar site em produção <span aria-hidden="true">↗</span></a>
-            </article>
-          </div>
-
-          <details class="project-details">
-            <summary><span>Explorar o escopo do Real Mercado</span><span class="details-indicator" aria-hidden="true">+</span></summary>
-            <div class="details-grid">
-              <div><h4>Compra e pagamento</h4><p>Cadastro e autenticação com confirmação por OTP, catálogo por departamentos e categorias, pesquisa, filtros, ofertas, carrinho e checkout. PIX integrado ao Mercado Pago, suporte a vale-alimentação e validações como pedido mínimo.</p></div>
-              <div><h4>Pedidos e operação</h4><p>Entrega expressa ou agendada, retirada gratuita, taxa por região e acompanhamento do status. Painel administrativo para produtos, pedidos, estoque, dashboards e controles operacionais.</p></div>
-              <div><h4>Promoções e segurança</h4><p>Cupons associados a motoboys e agentes de venda, com limites por período, cliente e utilização e histórico no pedido. Promoções por produto, conjunto ou categoria integradas ao carrinho e checkout, além de políticas de cancelamento, troca e reembolso e atenção à LGPD.</p></div>
+            <div>
+              <span class="section-kicker">Projetos principais</span>
+              <h2 id="projetos-title">Experiência aplicada em <em>dois cenários reais.</em></h2>
             </div>
-          </details>
+            <p>Do controle interno de uma empresa à jornada completa de compra e entrega.</p>
+          </div>
+
+          <article class="case-study">
+            <div class="case-visual kellynha-visual">
+              <img src="assets/design2.png" alt="Identidade visual da Kellynha" loading="lazy" />
+              <span class="visual-label">Sistema empresarial</span>
+            </div>
+            <div class="case-content">
+              <span class="case-number">01 / Kellynha App</span>
+              <h3>Gestão interna e processos empresariais</h3>
+              <p>O Kellynha App representa minha experiência com sistemas voltados à rotina de uma empresa, organização operacional e centralização de processos internos.</p>
+              <div class="case-focus">
+                <span>Gestão interna</span><span>Processos</span><span>Operação</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-study case-study-reverse">
+            <div class="case-visual mercado-visual">
+              <img src="assets/real-mercado.jpg" alt="Imagem utilizada na experiência do e-commerce Real Mercado" loading="lazy" />
+              <div class="browser-chip" aria-hidden="true"><i></i><i></i><i></i><span>realmercado.com.br</span></div>
+              <span class="visual-label">Projeto comercial em produção</span>
+            </div>
+            <div class="case-content">
+              <span class="case-number">02 / Real Mercado</span>
+              <h3>E-commerce, pagamentos, pedidos e logística</h3>
+              <p>Plataforma de supermercado que digitaliza a jornada de compra e reúne catálogo, promoções, checkout, pagamentos, pedidos e entrega.</p>
+              <ul class="case-list">
+                <li>Conta com confirmação por OTP, catálogo, pesquisa, filtros e carrinho</li>
+                <li>PIX via Mercado Pago e suporte a vale-alimentação</li>
+                <li>Entrega expressa ou agendada, retirada e taxa por região</li>
+                <li>Painel administrativo, pedidos, produtos, estoque e dashboards</li>
+              </ul>
+              <div class="case-actions">
+                <a class="text-link" href="https://realmercado.com.br/" target="_blank" rel="noopener noreferrer">Visitar projeto <span aria-hidden="true">↗</span></a>
+                <button class="details-toggle" type="button" aria-expanded="false" aria-controls="real-mercado-details">Ver escopo completo <span aria-hidden="true">+</span></button>
+              </div>
+              <div class="project-details" id="real-mercado-details" hidden>
+                <p><strong>Cupons e promoções:</strong> regras por período, cliente e quantidade de utilizações; cupons associados a motoboys e agentes de venda; histórico vinculado ao pedido; promoções para produtos, conjuntos e categorias integradas ao carrinho e checkout.</p>
+                <p><strong>Operação e segurança:</strong> pedido mínimo, acompanhamento do status, políticas de cancelamento, troca e reembolso e proteção dos dados dos clientes.</p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section section-light design-section" id="design" aria-labelledby="design-title">
-        <div class="container">
-          <div class="section-heading">
-            <div><span class="section-kicker">03 / Repertório visual</span><h2 id="design-title">Design também faz parte <span>do processo.</span></h2></div>
-            <p>Explorações visuais que complementam meu trabalho com interfaces e experiências digitais.</p>
+      <section class="section section-light" id="trajetoria" aria-labelledby="trajetoria-title">
+        <div class="container trajectory-grid">
+          <div class="section-intro">
+            <span class="section-kicker">Trajetória</span>
+            <h2 id="trajetoria-title">Base técnica e visão <em>multidisciplinar.</em></h2>
           </div>
-          <div class="design-grid">
-            <figure><img src="assets/design1.png" alt="Identidade visual Luna Presentes" loading="lazy" /><figcaption>Identidade visual <span>Luna Presentes</span></figcaption></figure>
-            <figure><img src="assets/design2.png" alt="Identidade visual Kellynha's Underwear" loading="lazy" /><figcaption>Identidade visual <span>Kellynha’s Underwear</span></figcaption></figure>
-            <figure><img src="assets/design3.png" alt="Arte para canal de YouTube" loading="lazy" /><figcaption>Arte digital <span>Canal de YouTube</span></figcaption></figure>
+          <div class="timeline">
+            <article><span class="timeline-date">2024 — atual</span><div><h3>Desenvolvedor estagiário</h3><p>Lorenfer Ltda</p><small>Desenvolvimento web com Angular, TypeScript e integração com APIs.</small></div></article>
+            <article><span class="timeline-date">2023 — 2027</span><div><h3>Análise e Desenvolvimento de Sistemas</h3><p>FATEC Guaratinguetá</p><small>Formação tecnológica em andamento.</small></div></article>
+            <article><span class="timeline-date">2021 — 2023</span><div><h3>Auxiliar administrativo</h3><p>Kellynha Ltda</p><small>Experiência com processos internos, administração e operação.</small></div></article>
           </div>
         </div>
       </section>
 
       <section class="contact-section" id="contato" aria-labelledby="contato-title">
         <div class="container contact-grid">
-          <div><span class="section-kicker">04 / Contato</span><h2 id="contato-title">Vamos conversar sobre <span>o próximo projeto?</span></h2><p>Se você precisa transformar uma ideia ou operação em uma experiência digital, vamos conversar.</p></div>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:fabio12513@gmail.com">Enviar um e-mail <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="https://wa.me/5512991464465?text=Ol%C3%A1%2C+vim+pelo+seu+portf%C3%B3lio%21" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp <span aria-hidden="true">↗</span></a>
+          <div>
+            <span class="section-kicker">Contato</span>
+            <h2 id="contato-title">Vamos transformar uma necessidade em <em>solução?</em></h2>
+          </div>
+          <div class="contact-copy">
+            <p>Estou disponível para conversar sobre desenvolvimento web, sistemas empresariais e experiências digitais.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:fabio12513@gmail.com">Enviar e-mail <span aria-hidden="true">↗</span></a>
+              <a class="button button-ghost" href="https://wa.me/5512991464465?text=Ol%C3%A1%2C+vim+pelo+seu+portf%C3%B3lio%21" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </div>
       </section>
